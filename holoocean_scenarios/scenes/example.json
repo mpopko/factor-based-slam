@@ -1,0 +1,50 @@
+{
+  "name": "record_replay",
+  "world": "SimpleUnderwater",
+  "package_name": "Ocean",
+  "main_agent": "auv0",
+  "ticks_per_sec": 60,
+  "agents": [
+    {
+      "agent_name": "auv0",
+      "agent_type": "HoveringAUV",
+      "sensors": [
+        {
+          "sensor_type": "IMUSensor",
+          "socket": "IMUSocket",
+          "configuration": {
+            "AccelCov": [
+              [0.000529, 0.0, 0.0],
+              [0.0, 0.000529, 0.0],
+              [0.0, 0.0, 0.000529]
+            ],
+            "AngVelCov": [
+              [4.5449e-05, 0.0, 0.0],
+              [0.0, 4.5449e-05, 0.0],
+              [0.0, 0.0, 4.5449e-05]
+            ],
+            "AccelBiasCov": [
+              [6.724e-07, 0.0, 0.0],
+              [0.0, 6.724e-07, 0.0],
+              [0.0, 0.0, 6.724e-07]
+            ],
+            "AngVelBiasCov": [
+              [2.35225e-09, 0.0, 0.0],
+              [0.0, 2.35225e-09, 0.0],
+              [0.0, 0.0, 2.35225e-09]
+            ],
+            "ReturnBias": true
+          }
+        },
+        {
+          "sensor_type": "PoseSensor",
+          "socket": "IMUSocket",
+          "configuration": []
+        }
+      ],
+      "control_scheme": 0,
+      "location": [0, 0, -18],
+      "rotation": [0, 0, 90]
+    }
+  ]
+}

@@ -5,10 +5,32 @@ With HoloOcean (https://byu-holoocean.github.io/holoocean-docs/), this code impl
 
 ## Installation
 
-Using HoloOcean is only supported under Windows and Linux distributions. GTSAM Python library can be installed via pip, however this only works under MacOS and Linux (Windows has to be build manually.)
-We therefore provide installation guides for Linux which includes HoloOcean and the Factor-Based-SLAM methods, and on installation guide for only installing the Factor-Based-SLAM. To be able to run the Factor-Based-SLAM methods on must install and build GTSAM under Windows (https://github.com/borglab/gtsam/blob/develop/INSTALL.md).
+Using HoloOcean is only supported under Windows and Linux distributions. GTSAM Python library can be installed via conda-forge.
 
-### Installation Factor-Based-SLAM + Holoocean
+We recommand using a Conda enviornment.
 
+Create a new envrionment and activate it:
 
-### Installation Factor-Based-SLAM
+```sh
+$ conda create -n factorslam python=3.9
+$ conda activate factorslam
+```
+
+Then install the needed packages for running the SLAM code and the example jupyter notebook:
+
+```sh
+$ (factorslam) conda install numpy pandas matplotlib scipy ipykernal notebook
+$ (factorslam) conda install gtsam -c conda-forge
+```
+
+If HoloOcean should be installed (Not supported under MacOS):
+```sh
+$ (factorslam) pip install holoocean
+```
+
+Test usage by running the example jupyter notebook:
+```sh
+$ (factorslam) jupyter notebook
+```
+
+In the jupyter notebook, open and run factorslam/example.ipynb .

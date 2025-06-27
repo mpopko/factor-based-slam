@@ -8,6 +8,7 @@ With HoloOcean (https://byu-holoocean.github.io/holoocean-docs/), this code impl
 ## Installation
 
 Using HoloOcean is only supported under Windows and Linux distributions and thorugh directly cloning from Github. GTSAM Python library can be installed via conda-forge.
+Note that, HoloOcean is not needed for running the factor-based SLAM functionalities.
 
 We recommand using a Conda enviornment.
 
@@ -34,7 +35,7 @@ In the jupyter notebook, open and run factorslam/example.ipynb .
 
 ---
 
-### HoloOcean installtion (Not supported under MacOS):
+### HoloOcean installation (Not supported under MacOS):
 For inputs:
 ```sh
 $ (factorslam) pip install keyboard

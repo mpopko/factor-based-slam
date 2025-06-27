@@ -10,9 +10,9 @@ With HoloOcean (https://byu-holoocean.github.io/holoocean-docs/), this code impl
 Using HoloOcean is only supported under Windows and Linux distributions and thorugh directly cloning from Github. GTSAM Python library can be installed via conda-forge.
 Note that, HoloOcean is not needed for running the factor-based SLAM functionalities.
 
-We recommand using a Conda enviornment.
+We recommand using a Conda environment.
 
-Create a new envrionment and activate it:
+Create a new environment and activate it:
 
 ```sh
 $ conda create -n factorslam python=3.10
@@ -47,7 +47,7 @@ https://byu-holoocean.github.io/holoocean-docs/v2.0.0/usage/installation.html
 
 Follow the instruction by the creators of HoloOcean and make sure ```python -c `import holoocean; holoocean.install("Ocean")``` has been executed. This installs some sample levels, which are used in our examples.
 
-Make sure everything is installed in the ```(factorslam)``` envrionment. As example, run:
+Make sure everything is installed in the ```(factorslam)``` environment. As example, run:
 ```sh
 $ (factorslam) cd factorslam/holoocean_scenarios
 $ (factorslam) python record_replay.py
